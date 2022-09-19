@@ -1,5 +1,5 @@
                 .data
+palabra1:       .word 0x12345678
+byte:           .byte 0x12
                 .align 4
-palabra:        .word 123
-                .byte 1
-                .word 456
+palabra2:       .word 0x12345678
