@@ -16,4 +16,5 @@
     # display value
     li $v0, 2              # imprimo el valor de PI
     add.s $f12, $f0, $f4   # sumo el cero con el valor de PI
+    # add.s es para sumar floats
     syscall

@@ -17,4 +17,5 @@
     # Display the user's input
     li $v0, 3
     add.d $f12, $f0, $f4
+    # add.d es para sumar doubles
     syscall

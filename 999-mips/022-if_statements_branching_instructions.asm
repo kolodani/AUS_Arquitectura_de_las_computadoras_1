@@ -7,8 +7,10 @@
         addi $t1, $zero, 20
 
         beq $t0, $t1, numbersEquals
+        # beq compara dos registros y si son iguales salta a la etiqueta
 
         # bne $t0, $t1, numbersDifferent
+        # bne compara dos registros y si son diferentes salta a la etiqueta
 
     # syscall to the end program
     li $v0, 10
