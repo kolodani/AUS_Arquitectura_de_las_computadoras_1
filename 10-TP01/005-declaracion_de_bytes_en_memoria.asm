@@ -14,3 +14,7 @@ palabra2:   .word       0x10203040                # hexadecimal
 # el simulador utiliza este formato porque si uno guarda un byte,
 # el sistema tiene el lugar para poder guardar 3 mas,
 # mientras que en otro formato no se podria guardar nada mas
+
+# cuetion 1.11
+# los valores que toma las etiquetas palabra1 y palabra2 son:
+# 0x10010000 y 0x10010004 respectivamente
