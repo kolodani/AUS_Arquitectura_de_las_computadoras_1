@@ -19,3 +19,9 @@ palabra:    .word    10
 # cuestion 1.19
 # la direccion en memoria de byte1 es 0x10010000
 # la direccion en memoria de byte2 es 0x10010005
+
+# cuestion 1.20
+# la direccion en memoria de palabra es 0x10010008 porque al ocupar 4 bytes
+# no puede inicializar despues de byte2 en la direccion 0x10010006,
+# tiene que inicializar siempre en una direccion de memoria que sea
+# multiplo de 4
