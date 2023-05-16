@@ -5,5 +5,12 @@ palabra2:   .word       0x10203040                # hexadecimal
 # cuestion 1.9
 # los valores almacenados en con la etiqueta palabra1 se ve en
 # memoria como: 0x40302010
-# mientras que el valor almacenado en con la etiqueta palabra2 se ve en 
+# mientras que el valor almacenado en con la etiqueta palabra2 se ve en
 # memoria como: 0x10203040
+
+# cuestion 1.10
+# el simulador utiliza el formato little endian,
+# porque esto permite leer con mayor facilidad los datos.
+# el simulador utiliza este formato porque si uno guarda un byte,
+# el sistema tiene el lugar para poder guardar 3 mas,
+# mientras que en otro formato no se podria guardar nada mas
