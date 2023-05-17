@@ -28,3 +28,9 @@ main:       lw $s0, palabra($0)
 # la instruccion lui $1,0x00001001 carga en el registro $1 el valor 0x00001001.
 # la instruccion addu $1,$1,$0 carga en el registro $1 el valor 0x00001001.
 # la instruccion lw $16,0x00000000($1) carga en el registro $16 el valor 0x10203040.
+
+# cuestion 2.8
+
+# primero el programa se inicializa con la palabra cargada en la memoria
+# luego se altera el valor de $at con el valor de una instruccion
+# por ultimo se carga en el registro $s0 el valor que esta en la direccion
