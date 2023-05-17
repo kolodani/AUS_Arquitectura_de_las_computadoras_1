@@ -22,3 +22,9 @@ main:       lw $s0, palabra($0)
 # valor 0x1001, luego con addu carga en el registro $at el valor 0x10010000,
 # y por ultimo con lw carga en el registro $s0 el valor que esta en la
 # direccion 0x10010000, que es 0x10203040.
+
+# cuestion 2.7
+
+# la instruccion lui $1,0x00001001 carga en el registro $1 el valor 0x00001001.
+# la instruccion addu $1,$1,$0 carga en el registro $1 el valor 0x00001001.
+# la instruccion lw $16,0x00000000($1) carga en el registro $16 el valor 0x10203040.
