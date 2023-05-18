@@ -5,7 +5,7 @@ siguiente:      .byte       0x20
                 .text       # zona de instrucciones
 main:           lb $s0, octeto+1($0)
 
-# cuestion 2:17
+# cuestion 2.17
 
 # lo que sucedio ahora cambiando la instruccion de lb, sumandole al octeto + 1,
 # hace que se lea el byte 0x30, que es el segundo byte del word 0x10203040,
