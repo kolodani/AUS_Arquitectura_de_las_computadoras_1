@@ -11,3 +11,8 @@ main:       lw $s0, palabra($0)
 # lui $1, 0x00001001
 # addu $1, $1, $s0
 # sb $16, 0x00000004($1)
+
+# cuestion 2.21
+
+# al ejecutar la instruccion sb $s0, octeto($0) solamente se guarda el byte
+# menos significativo de octeto en $s0 que es 0x40
