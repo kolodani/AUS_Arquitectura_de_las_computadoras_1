@@ -14,3 +14,11 @@ main:           lw $s0, palabra1($0)
 # lui $1, 0x00001001
 # addu $1, $1, $0
 # lw $s16, 0x00000000($1)
+
+# cuestion 2.19
+
+# cuando el programa corre en el simulador, el valor de $s0 es 0x10203040,
+# va a ser guardado en memoria en las otras dos direcciones de memoria que son
+# palabra2 y palabra3, esto no se ve afectado porque palabra2 sea de tipo
+# .space, ya que el espacio almacenado es de 4 bytes, el mismo tamaño que
+# una palabra (.word)
