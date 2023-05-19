@@ -11,3 +11,9 @@ main:       lw   $t0, numero($0)
 # error. esto sucede porque al sumarle al numero mas grande que se puede
 # almacenar en 32 bits, se produce un desbordamiento y el resultado no puede
 # ser almacenado en 32 bits.
+
+# cuestion 3.3
+
+# lo que ocurrio fue que el programa dio error, el mismo detecto que no se
+# puede sumar el numero mas grande que se puede almacenar en 32 bits con el
+# numero 1, y por lo tanto no se realizo la suma.
