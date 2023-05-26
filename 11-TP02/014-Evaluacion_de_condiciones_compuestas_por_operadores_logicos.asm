@@ -23,3 +23,9 @@ fineval:
 # le cambia el valor a $t0. despues en igual se cumple el segundo beq y no se le
 # cambia el valor a $t1. por ultimo se hace un and entre $t0 y $t1 que son 0 y
 # se guarda en res.
+
+# cuestion 1.17
+
+# la comparacion compuesta que se realiza entre los valores de dato1 y dato2 es
+# un and entre los valores de dato1 y dato2. si ambos son 1, el resultado es 1.
+# sino es 0.
