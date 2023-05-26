@@ -15,3 +15,11 @@ main:
 # el valor que se almacena en res es cero porque el valor de t0 es mayor que
 # el de t1 y lo que pide la instruccion slt es que se almacene un 1 si el
 # primer operando es menor que el segundo y un 0 en caso contrario
+
+# cuestion 1.3
+
+# la comparacion que se realiza es entre los valores de los registros t0 y t1
+# es slt, que es una instruccion que compara dos valores y almacena un 1 si el
+# primer operando es menor que el segundo y un 0 en caso contrario. esta
+# instruccion necesita de un registro para almacenar el resultado de la
+# comparacion, en este caso el registro t2.
