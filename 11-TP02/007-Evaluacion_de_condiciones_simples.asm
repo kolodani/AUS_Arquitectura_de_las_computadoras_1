@@ -20,3 +20,8 @@ fineval:
 # los dos datos son iguales y por ultimo la instruccion ori guarda 1 en $t2 ya
 # que $t0 == $t1, lo que hace ori es cargar el valor 1 al hacer un or con 0 y 1
 # el resultado es 1. por ultimo se guarda el valor 1 en res.
+
+# cuestion 1.9
+
+# la comparacion que se ha evaluado entre dato1 y dat2 es: si dato1 es menor que
+# dato2, si es asi se guarda un 1, si no se guarda un 0.
