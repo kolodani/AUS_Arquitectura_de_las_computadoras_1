@@ -8,7 +8,7 @@ main:
         lw   $t0, dato1($0)    # cargar dato1 en t0
         lw   $t1, dato2($0)    # cargar dato2 en t1
         slt  $t2, $t0, $t1     # poner a 1 $t2 si t0 < t1
-        sb   $t2, res($0)      # almacenar $2 en res
+        sb   $t2, res($0)      # almacenar $t2 en res
 
 # cuestion 1.1
 
