@@ -25,3 +25,12 @@ fineval:
 # $t8 es falsa, por lo tanto $t1 es 0. luego se hace un and entre $t0 y $t1,
 # siendo los dos valores cero, el resultado es cero. por ultimo se almacena el
 # valor de cero en res.
+
+# cuestion 1.22
+
+# las comparaciones compuestas que se han evaluado son las siguientes:
+# los 3 and y el ori que se realizaron
+# and  $t1, $t1, $0
+# and  $t0, $t0, $0
+# and  $t0, $t0, $t1
+# ori  $t0, $0, 1
