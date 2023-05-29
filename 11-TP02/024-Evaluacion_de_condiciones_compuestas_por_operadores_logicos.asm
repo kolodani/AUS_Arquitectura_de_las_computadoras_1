@@ -22,3 +22,11 @@ fineval:
 # distinto de $t0, como lo es se va a la etiqueta fineval, alli se realiza el
 # or entre $t0 y $t1 que los dos valen 0, por lo tanto el resultado es 0, luego
 # se almacena en res el valor 0.
+
+# cuestion 1.29
+
+# las comparaciones compuestas que se han realizado son:
+# and  $t0, $t0, $0
+# and  $t1, $t1, $0
+# ori  $t1, $t0, 1
+# or   $t0, $t0, $t1
