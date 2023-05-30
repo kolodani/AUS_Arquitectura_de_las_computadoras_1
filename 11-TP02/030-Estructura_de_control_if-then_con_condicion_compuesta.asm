@@ -38,3 +38,9 @@ finsi:
 # condicion se usa para saltar hacia una etiqueta y evitar lineas de codigo por
 # lo tanto cuando ponemos una condicion en este caso, es a la inversa de la
 # condicion que se utiliza en el pseudocodigo.
+
+# cuestion 2.8
+
+# las instrucciones que se implementan en la estructura condicional if-then son:
+# beq  $t1, $0, finsi
+# beq  $t0, $0, finsi
