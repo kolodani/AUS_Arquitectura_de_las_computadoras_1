@@ -28,3 +28,9 @@ finpara:
 # este marcado por el indice.
 # por ultimo cuando el indice llegue al valor maximo, se va a guardar el valor
 # del acumulador en la posicion de memoria que se le indique.
+
+# cuestion 2.23
+
+# el valor que se almacena es 41, que es la suma de todos los valores del vector
+# que se le indico.
+# res = 6 + 7 + 8 + 9 + 10 + 1 = 41
