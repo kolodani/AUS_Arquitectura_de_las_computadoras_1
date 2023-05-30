@@ -44,3 +44,10 @@ finsi:
 # las instrucciones que se implementan en la estructura condicional if-then son:
 # beq  $t1, $0, finsi
 # beq  $t0, $0, finsi
+
+# cuestion 2.9
+
+# en la variable res se almacena el valor 71, que es el producto de la suma de
+# $t0 y $t1, que son respectivamente 40 y 30, y el resultado de la division
+# entera de $t0 y $t1, que es 1. por lo tanto la suma es 71.
+# res = 40 + 30 + 1 = 71
