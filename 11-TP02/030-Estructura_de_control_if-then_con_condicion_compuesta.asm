@@ -29,3 +29,12 @@ finsi:
 #   res = dato1 / dato2
 # res = res + dato1 + dato2
 # FIN
+
+# cuestion 2.7
+
+# en el pseudocodigo se utiliza una doble condiccion que es si dato1 != 0 y
+# dato2 != 0, pero en el codigo la condicion es si dato1 = 0 y dato2 = 0, por
+# lo que el codigo no es equivalente al pseudocodigo, esto se debe a que la
+# condicion se usa para saltar hacia una etiqueta y evitar lineas de codigo por
+# lo tanto cuando ponemos una condicion en este caso, es a la inversa de la
+# condicion que se utiliza en el pseudocodigo.
