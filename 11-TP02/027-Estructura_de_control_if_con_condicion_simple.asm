@@ -23,3 +23,13 @@ finsi:
 # para evitar una division por 0, esto seria la condicion del if, si $t1 es
 # igual a 0, se salta a la etiqueta finsi, si no, se ejecuta la division y se
 # almacena el resultado en $t2. esto evita que se ejecute la division por 0.
+
+# cuestion 2.2
+
+# la estructura condicional del if-then implementa un conjunto de instrucciones,
+# estas son:
+# beq que vendria a ser el if, o mejor dicho el condicional del if.
+# then se implementa en este caso si la condicion no es cierta asi se evita el
+# salto en el codigo.
+# y por ultimo el resto del codigo se realiza pase lo que pase, lo unico que lo
+# altera es que suceda lo que esta en el then.
