@@ -33,3 +33,8 @@ finsi:
 # salto en el codigo.
 # y por ultimo el resto del codigo se realiza pase lo que pase, lo unico que lo
 # altera es que suceda lo que esta en el then.
+
+# cuestion 2.3
+
+# en la variable res se guarda el valor 71, que es el resultado de la suma de
+# 40 y 30 y la division entera de 40 y 30, que es 1.
