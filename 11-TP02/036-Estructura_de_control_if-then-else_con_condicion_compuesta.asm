@@ -1,6 +1,6 @@
         .data
-dato1:  .word    30
-dato2:  .word    40
+dato1:  .word    40
+dato2:  .word    30
 dato3:  .word    -1
 res:    .space    4
 
@@ -35,4 +35,9 @@ finsi:
 # fin si
 # FIN
 
-        .data
+# cuestion 2.17
+
+# el valor que se guarda en res es 1, ya que dato3 es menor que dato1.
+# el valor que se guarda en res si dato1 = 40 y dato2 = 30 es 1, ya que dato3
+# es menor que dato1. y se sigue recorriendo el codigo de la misma manera que
+# se recorria en la primera ejecucion.
