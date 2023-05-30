@@ -21,3 +21,13 @@ finsi:
 # el programa guarda en res el menor de los dos valores, en el primer caso
 # guarda 30 porque es menor que 40 y lo mismo sucede cuando cambio el valor a
 # 35, porque sigue siendo menor que 40.
+
+# cuestion 2.14
+
+# el simulador sustituye la instruccion bge por dos instrucciones,
+# la primera es slt y la segunda es beq
+# sustituye la linea:
+# bge  $t0, $t1, sino
+# por:
+# slt  $at, $t0, $t1
+# beq  $at, $0, 0x00000004
