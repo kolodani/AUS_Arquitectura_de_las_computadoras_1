@@ -25,3 +25,9 @@ finmientras:
 # valor 0 en la tabla ascii. se recorre caracter a caracter de la cadena y se
 # incrementa el puntero y ademas un contador. cuando se llega al fin de linea,
 # se almacena el contador en la variable n.
+
+# cuestion 2.20
+
+# en la variable n se almacena el numero de caracteres que contiene la cadena,
+# en este caso n = 4. se crea este valor incrementando en 1 en cada ciclo del
+# bucle while.
