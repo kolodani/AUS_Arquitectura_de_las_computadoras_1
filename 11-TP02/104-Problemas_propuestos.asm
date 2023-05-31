@@ -3,7 +3,7 @@ dato1:      .word     2
 dato2:      .word     10
 dato3:      .word     50
 dato4:      .word     70
-dato5:      .word     4
+dato5:      .word     34
 res:        .space    4
 
             .text
