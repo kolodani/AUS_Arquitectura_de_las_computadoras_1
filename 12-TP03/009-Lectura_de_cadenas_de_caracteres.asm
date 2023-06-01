@@ -13,3 +13,12 @@ main:
         syscall             # llamada al sistema
 
 # cuestion 1.9
+
+# la cadena se almacena de manera perfecta
+
+# cuestion 1.10
+
+# si se escribe una cadena mas grande que el tamaño reservado para el buffer, el
+# programa solo almacena los caracteres que caben en el buffer y sigue con el
+# resto del codigo. se guardan 9 caracteres y el ultimo es el caracter de fin de
+# cadena.
