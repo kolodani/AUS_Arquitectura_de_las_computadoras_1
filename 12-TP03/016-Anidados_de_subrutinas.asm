@@ -30,3 +30,12 @@ subr:
 
 # en el tope de la pila se almacena el valor de $ra que en el momento que
 # comienza la ejecucion del programa es 0x00000000
+
+# cuestion 2.10
+
+# anted de la ejecucion de la instruccion jal subr, el contenido de $ra es
+# 0x00000000 y el de pc es 0x00400000 y varia en 4 en 4 hasta 0x00400020 y
+# cambia a 0x0040003c.
+# despues de la ejecucion de la instruccion jal subr, el contenido de $ra es
+# 0x00400024 y el de pc cambia de 0x00400030 de 4 en 4 hasta 0x00400038 y por
+# ultimo cambia a 0x00000000.
