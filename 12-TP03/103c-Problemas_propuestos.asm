@@ -40,4 +40,4 @@ fin:
             move    $v0, $a3
             jr      $ra
 
-# entreda b
+# entreda c
