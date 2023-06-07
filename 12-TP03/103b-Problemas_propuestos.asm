@@ -7,9 +7,9 @@ contador:   .word   0
             .text
 main:
             la      $a0, vector
-            lw      $a1, n($0)
-            lw      $a2, valor($0)
-            lw      $a3, contador($0)
+            la      $a1, n
+            la      $a2, valor
+            la      $a3, contador
             jal     contar
             move    $a0, $v0
             li      $v0, 1
@@ -17,6 +17,10 @@ main:
             li      $v0, 10
             syscall
 contar:
+            lw      $a1, 0($a1)
+            lw      $a2, 0($a2)
+            lw      $a3, 0($a3)
+bucle:
             beq     $a1, $0, fin
             lw      $t0, ($a0)
             bne     $t0, $a2, distintos
@@ -24,8 +28,9 @@ contar:
 distintos:
             addi    $a0, $a0, 4
             addi    $a1, $a1, -1
-            j       contar
+            j       bucle
 fin:
             move    $v0, $a3
             jr      $ra
 
+# entreda b
