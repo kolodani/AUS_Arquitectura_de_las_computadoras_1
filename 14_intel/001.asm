@@ -1,3 +1,4 @@
+%include "asm_io.inc"
 ; mi primer programa
 ;
 
@@ -14,6 +15,7 @@ asm_main:
                     mov     eax, [integer1]
                     add     eax, [integer2]
                     mov     [result], eax
+                    call    print_int
                     popa
                     mov     eax, 0
                     leave
