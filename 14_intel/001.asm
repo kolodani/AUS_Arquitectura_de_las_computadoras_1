@@ -15,7 +15,9 @@ asm_main:
                     mov     eax, [integer1]
                     add     eax, [integer2]
                     mov     [result], eax
+                    dump_regs 2
                     call    print_int
+                    call    print_nl
                     popa
                     mov     eax, 0
                     leave
