@@ -6,7 +6,6 @@ segment .text
 
 calc_sum:
         enter       4,0             ; espacio en stack para sum
-        push        ebx
 
         mov         dword [ebp-4],0 ; sum = 0
         dump_stack  1,2,4
@@ -20,13 +19,6 @@ for_loop:
         jmp         short for_loop
 
 end_for:
-        mov        eax,[ebp+12]
         mov        eax,[ebp-4]
-        mov        [ebx], eax
-
-        pop        ebx
         leave
         ret
-
-
-
