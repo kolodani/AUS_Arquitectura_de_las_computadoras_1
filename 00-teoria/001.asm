@@ -15,3 +15,18 @@
 # 5. Copia la palabra, si es necesario, en un registro de la CPU.
 # 6. Ejecuta la instruccion.
 # 7. Vuelve al punto inicial 1 para comenzar con la siguiente instruccion.
+
+# Arquitectura de computadoras: Abstraccion
+
+# application : Programas
+# Algorithm : Estructuras de datos
+# Programming languages : C, C++, Java, ....
+# Operating system / Virtual machine : Device drivers
+# Instruction set architecture : Instrucciones y registros
+# Microarchitecture : Rutas de datos, unidad de control
+# register-transfer level : Sumadores, multiplexores, memorias
+# Gates : AND, OR, NOT, NAND
+# Circuits : CMOS
+# Devices: Transistores, pull-up, pistas
+# physics : Electrones
+
