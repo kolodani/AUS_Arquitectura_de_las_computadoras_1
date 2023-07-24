@@ -124,3 +124,100 @@
 # mayor velocidad
 
 # Karnaugh
+# simplificacion, menor cantidad de terminos y mas chicos
+# reescribo la tbla de verdad con el codigo de gray en el mapa
+# tomo grupos de 1 a 0 contiguos (1er o 2da forma canonica) bajo las premisas:
+# rectangulos o cuadrados
+# cantidad de elementos n = 2x con x entero
+# cantidad de elementos la mayor posible, mas simplificacion
+# puedo tomar un termino varias veces (idempotencia)
+# no tomar grupos redundantes
+# los extremos son contiguos (los terminos que difieren en 1 bit)
+
+# Multiplexores
+# data inputs (D0, D1, D2, D3)
+# control inputs (A, B)
+# output (F)
+
+# | A | B | F |
+# | 0 | 0 | D0|
+# | 0 | 1 | D1|
+# | 1 | 0 | D2|
+# | 1 | 1 | D3|
+# F = A' * B' * D0 + A' * B * D1 + A * B' * D2 + A * B * D3
+
+# Demultiplexores
+# data input (D)
+# control inputs (A, B)
+# output (F0, F1, F2, F3)
+
+# | D | A | B | F0 | F1 | F2 | F3 |
+# | 0 | 0 | 0 |  0 |  0 |  0 |  0 |
+# | 0 | 0 | 1 |  0 |  0 |  0 |  0 |
+# | 0 | 1 | 0 |  0 |  0 |  0 |  0 |
+# | 0 | 1 | 1 |  0 |  0 |  0 |  0 |
+# | 1 | 0 | 0 |  1 |  0 |  0 |  0 |
+# | 1 | 0 | 1 |  0 |  1 |  0 |  0 |
+# | 1 | 1 | 0 |  0 |  0 |  1 |  0 |
+# | 1 | 1 | 1 |  0 |  0 |  0 |  1 |
+# F0 = A' * B' * D
+# F1 = A' * B * D
+# F2 = A * B' * D
+# F3 = A * B * D
+
+# Decodificadores
+
+# Enable = 1
+# | A | B | D0 | D1 | D2 | D3 |
+# | 0 | 0 |  1 |  0 |  0 |  0 |
+# | 0 | 1 |  0 |  1 |  0 |  0 |
+# | 1 | 0 |  0 |  0 |  1 |  0 |
+# | 1 | 1 |  0 |  0 |  0 |  1 |
+
+# Enable = 0
+# | A | B | D0 | D1 | D2 | D3 |
+# | 0 | 0 |  0 |  0 |  0 |  0 |
+# | 0 | 1 |  0 |  0 |  0 |  0 |
+# | 1 | 0 |  0 |  0 |  0 |  0 |
+# | 1 | 1 |  0 |  0 |  0 |  0 |
+
+# D0 = A' * B' * Enable
+# D1 = A' * B * Enable
+# D2 = A * B' * Enable
+# D3 = A * B * Enable
+
+# Codificadores de prioridad
+# | A0 | A1 | A2 | A3 | F0 | F1 |
+# |  0 |  0 |  0 |  0 |  0 |  0 |
+# |  0 |  0 |  0 |  1 |  1 |  1 |
+# |  0 |  0 |  1 |  0 |  1 |  0 |
+# |  0 |  0 |  1 |  1 |  1 |  0 |
+# |  0 |  1 |  0 |  0 |  0 |  1 |
+# |  0 |  1 |  0 |  1 |  0 |  1 |
+# |  0 |  1 |  1 |  0 |  0 |  1 |
+# |  0 |  1 |  1 |  1 |  0 |  1 |
+# |  1 |  0 |  0 |  0 |  0 |  0 |
+# |  1 |  0 |  0 |  1 |  0 |  0 |
+# |  1 |  0 |  1 |  0 |  0 |  0 |
+# |  1 |  0 |  1 |  1 |  0 |  0 |
+# |  1 |  1 |  0 |  0 |  0 |  0 |
+# |  1 |  1 |  0 |  1 |  0 |  0 |
+# |  1 |  1 |  1 |  0 |  0 |  0 |
+# |  1 |  1 |  1 |  1 |  0 |  0 |
+
+# F0 = A0' * A1' * A3 + A0' * A1' * A2
+# F1 = A0' * A2' * A3 + A0' * A1
+
+# Sumador
+# | Ai | Bi | Ci | Si | Ci+1 |
+# |  0 |  0 |  0 |  0 |   0  |
+# |  0 |  0 |  1 |  1 |   0  |
+# |  0 |  1 |  0 |  1 |   0  |
+# |  0 |  1 |  1 |  0 |   1  |
+# |  1 |  0 |  0 |  1 |   0  |
+# |  1 |  0 |  1 |  0 |   1  |
+# |  1 |  1 |  0 |  0 |   1  |
+# |  1 |  1 |  1 |  1 |   1  |
+
+# Si = Ai' * Bi' * Ci + Ai' * Bi * Ci' + Ai * Bi' * Ci' + Ai * Bi * Ci = A xor B xor C
+# Ci = Ai' * Bi * Ci + Ai * Bi' * Ci + Ai * Bi * Ci' + Ai * Bi * Ci = AB + BC + AC
