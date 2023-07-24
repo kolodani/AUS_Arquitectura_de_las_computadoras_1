@@ -124,4 +124,3 @@
 # mayor velocidad
 
 # Karnaugh
-# 
