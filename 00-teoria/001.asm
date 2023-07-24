@@ -1,3 +1,5 @@
+# CONCEPTOS BASICOS DE ARQUITECTURA DE COMPUTADORAS
+
 # CPU
 
 # la unidad de control (UC): responsalbe de la captura de intrucciones desde la memoria principal.
